@@ -1,0 +1,46 @@
+.gdbar img {
+    width: 180px !important;
+    height: 80px !important;
+}
+
+ 
+slides > slide:not(.nobackground):before {
+          width: 1800px;
+          height: 70px;
+          background-size: 5%;
+          background-position: 0% 100%;
+}
+
+/* Text Colour 
+body p {
+  color: #000000;
+}*/
+
+/* Slide type */
+.fullslide img {
+  margin-top: -185px;
+  margin-left: -60px;
+}
+
+.wordcloud {
+  margin-top: -40px;
+}
+
+.imageslide{
+  margin-top: -10px;
+}
+
+.bloatslide{
+  margin-top: -0px;
+}
+
+
+.shinyslide{
+  margin-top: -10px;
+  max-height: 900px !important;
+  text-align: center;
+}
+
+iframe {
+  height: 600px;
+}
