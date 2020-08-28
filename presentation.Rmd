@@ -206,7 +206,7 @@ grid.raster(img)
 ## {.shinyslide}
 
 ```{r pl app, screenshot.opts = list(delay = 5), cache = F}
-knitr::include_app("http://54.170.29.71:3838/FF15-16/", height = "800px")
+knitr::include_app("http://aboland.ie:3838/FF15-16/", height = "800px")
 # knitr::include_app("https://aboland.shinyapps.io/football/", height = "800px")
 ```
 
@@ -310,7 +310,7 @@ grid.raster(img)
 ## {.shinyslide}
 
 ```{r db app, screenshot.opts = list(delay = 5), cache = F}
-knitr::include_app("http://54.170.29.71:3838/DublinRTPI/", height = "800px")
+knitr::include_app("http://aboland.ie:3838/DublinRTPI/", height = "800px")
 # knitr::include_app("https://aboland.shinyapps.io/DublinTransport/", height = "800px")
 ```
 
@@ -366,9 +366,9 @@ if ("routes" %in% names(query)) {
   - Simple to deploy app
   - Almost no maintenance
   - Easy to start and stop apps
-  - Visibilty on app usage
+  - Visibility on app usage
 - Cons
-  - Non customisable URLs  
+  - Non customisable URL's  
   (without pro plan)
   - App limits
   - Usage limits
@@ -432,52 +432,6 @@ grid.raster(img)
 
 
 
-# Appendix
-# Sharing Apps
-
-## Sharing - Files
-
-- Files
-  - app.R or ui.R + server.R
-
-<br>
-
-- Cons
-  - Person running the app must be familiar with R
-  - Potential problems with old or new library versions
-  
-  
-## Sharing - Within R Package
-
-- R packages/libraries can include shiny images
-- Store app in `inst/shiny-examples/my_app` directory
-```{r , eval = F, echo = T}
-run_ShinyApp <- function() {
-  appDir <- system.file("shiny-examples", "my_app", package = "footballR")
-  if (appDir == "") {
-    stop("Could not find example directory. Try re-installing `footballR`.", call. = FALSE)
-  }
-  shiny::runApp(appDir, display.mode = "normal")
-}
-```
-
-[Example](https://github.com/aboland/footballR)
-```{r , eval = F, echo = T}
-devtools::install_github("aboland/footballR")
-footballR::run_ShinyApp()
-```
 
 
-## Sharing - [Docker](https://www.docker.com/)
-
-- Docker is a very useful method of creating and running isolated versions of software
-- Build 'images' with specific version of R and libraries
-<!-- - http://54.170.29.71/Docker.html -->
-
-<br>
-
-- Cons
-  - Person needs familiarity with Docker
-  
-  
   
