@@ -36,35 +36,7 @@ library(grid)
 
 # Introduction
 
-<!-- ## About Me {.columns-2} -->
 
-
-<!-- ```{r , fig.height=2, fig.width=3, fig.align='center'} -->
-<!-- img <- readPNG("files/Edge_Logo.png") -->
-<!-- grid.raster(img) -->
-<!-- ``` -->
-<!-- <br><br> -->
-<!-- ```{r , fig.height=2, fig.width=2.5, fig.align='center'} -->
-<!-- img <- readPNG("files/UCD_logo.png") -->
-<!-- grid.raster(img) -->
-<!-- ``` -->
-
-<!-- <br><br> -->
-
-<!-- - Senior Data Scientist -->
-<!--    - Edge by Ascential -->
-<!--        - Ecommerce analytics -->
-<!--        - 500+ employees -->
-<!--        - Data Science $\approx$ 16 People -->
-<!-- <br><br> -->
-
-<!-- - Occasional Lecturer -->
-<!--    - University College Dublin -->
-<!--        - September 2020 -->
-<!--        - Intro to Data Analytics -->
-    
-    
-    
 ## About Me {.columns-2 .smaller}
 
 ```{r , fig.height=1, fig.width=5, fig.align='left'}
@@ -119,7 +91,6 @@ grid.raster(img)
 
 ```{r teaching url, screenshot.opts = list(delay = 5), cache = F}
 knitr::include_app("https://aboland.shinyapps.io/teaching_app/", height = "800px")
-# knitr::include_app("http://54.170.29.71:3838/TeachingApp/", height = "800px")
 ```
 
 
@@ -137,7 +108,7 @@ knitr::include_app("https://aboland.shinyapps.io/teaching_app/", height = "800px
 ## My Journey with Shiny
 
 - First created a Shiny App in 2015
-  - [Teaching app](http://54.170.29.71:3838/TeachingApp/) to help explain regression and correlation
+  - [Teaching app](https://aboland.shinyapps.io/teaching_app/) to help explain regression and correlation
 
 - Second App created during Postdoc 
   - Needed a way of allowing a non technical user to run my code
@@ -206,8 +177,7 @@ grid.raster(img)
 ## {.shinyslide}
 
 ```{r pl app, screenshot.opts = list(delay = 5), cache = F}
-knitr::include_app("http://aboland.ie:3838/FF15-16/", height = "800px")
-# knitr::include_app("https://aboland.shinyapps.io/football/", height = "800px")
+knitr::include_app("https://aboland.shinyapps.io/football/", height = "800px")
 ```
 
 
@@ -310,8 +280,7 @@ grid.raster(img)
 ## {.shinyslide}
 
 ```{r db app, screenshot.opts = list(delay = 5), cache = F}
-knitr::include_app("http://aboland.ie:3838/DublinRTPI/", height = "800px")
-# knitr::include_app("https://aboland.shinyapps.io/DublinTransport/", height = "800px")
+knitr::include_app("https://aboland.shinyapps.io/DublinTransport/", height = "800px")
 ```
 
 
